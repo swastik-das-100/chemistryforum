@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Forum</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #1abc9c;
+            color: black;
+        }
+
+        .container {
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-container input, .form-container select, .form-container button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .form-container input[type="text"], .form-container select {
+            background-color: #f8f8f8;
+        }
+
+        .form-container button {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #16a085;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .contact-info strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chemistry Forum</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#admission">Join Now</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div id="about" class="container">
+        <h2 class="section-title">About Us</h2>
+        <p>An apex institute of chemistry for preparation of Boards, IIT-JEE & NEET. We aim to provide expert guidance and coaching to students aspiring for excellence in chemistry and related exams.</p>
+    </div>
+
+    <div id="admission" class="container">
+        <h2 class="section-title">Admission Form</h2>
+        <div class="form-container">
+            <form method="POST" action="your_server_script_here">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <input type="text" id="school" name="school" placeholder="Enter School Name" required>
+                <input type="text" id="class" name="class" placeholder="Enter Your Class" required>
+
+                <select id="batch" name="batch" required>
+                    <option value="">Select Batch</option>
+                    <option value="class-10">Class-10 Board Batch</option>
+                    <option value="class-11">Class-11 Board Batch</option>
+                    <option value="class-12">Class-12 Board Batch</option>
+                    <option value="class-11-jee-neet">Class-11 JEE & NEET Batch</option>
+                    <option value="class-12-jee-neet">Class-12 JEE & NEET Batch</option>
+                    <option value="repeaters">Repeaters JEE & NEET Batch</option>
+                </select>
+
+                <select id="centre" name="centre" required>
+                    <option value="">Select Centre</option>
+                    <option value="uttarpara">Uttarpara Centre</option>
+                    <option value="konnagar">Konnagar Centre</option>
+                    <option value="serampore">Serampore Centre</option>
+                    <option value="chandannagar">Chandannagar Centre</option>
+                    <option value="ballygunge">Ballygunge Centre</option>
+                </select>
+
+                <input type="text" id="contact" name="contact" placeholder="Enter Your Contact Number" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +91 82729 65987</p>
+            <p><strong>Email:</strong> avisekhghosal@gmail.com</p>
+            <p><strong>Address:</strong> 102, Bijay Krishna Street, Uttarpara Kotrung, West Bengal, Pin-712258, District-Hooghly, INDIA</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you for visiting Chemistry Forum. For any other details contact: +91 82729 65987</p>
+    </footer>
+
+</body>
+</html>
